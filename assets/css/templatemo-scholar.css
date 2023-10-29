@@ -705,6 +705,31 @@ Banner Style
   display: inline-block;
   margin-bottom: 50px;
 }
+.btn-category {
+  background-color: #7a6ad8;
+  border-color: #442adb;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 15px;
+}
+.btn-category:hover {
+  background-color: #442adb;
+  border-color: #442adb;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 15px;
+}
+.btn-category:active{
+  transform: scale(1.1);
+}
 
 .main-banner .item h2 {
   font-size: 48px;
@@ -1350,6 +1375,10 @@ Events Style
   display: inline-block;
   width: 17.5%;
   vertical-align: middle;
+}
+.events .item ul li {
+  display: inline-block;
+  width: 32.5% !important;
 }
 
 .events .item ul li:first-child {

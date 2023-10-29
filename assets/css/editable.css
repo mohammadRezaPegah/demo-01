@@ -1,0 +1,183 @@
+.text-edit:hover{
+    color: #7a6ad8;
+}
+
+.main-edit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.editable:hover .main-edit{
+    visibility: visible;
+}
+
+.text-edit{
+    margin-left: 10px;
+    display: none;
+    cursor: pointer;
+}
+.editable-hero-top-btn:hover .text-edit{
+    display: inline-block;
+}
+.editable-hero-bottom-btn:hover .text-edit{
+    display: inline-block;
+}
+.editable-hero-header:hover .text-edit{
+    display: inline-block;
+}
+.editable-hero-paragraph:hover .text-edit{
+    display: inline-block;
+}
+
+.editable-abilities-image{
+    position: relative;
+}
+.abilities-image-edit{
+    visibility: hidden;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.editable-abilities-image:hover .abilities-image-edit{
+    visibility: visible;
+}
+.editable-abilities-header:hover .text-edit{
+    display: inline-block;
+}
+.editable-abilities-paragraph:hover .text-edit{
+    display: inline-block;
+}
+.editable-about-headline:hover .text-edit{
+    display: inline-block;
+}
+.editable-about-paragraph:hover .text-edit{
+    display: inline-block;
+}
+.editable-about-description-header:hover .text-edit{
+    display: inline-block;
+}
+.editable-about-description-paragraph:hover .text-edit{
+    display: inline-block;
+}
+.editable-course-headline:hover .text-edit{
+    display: inline-block;
+}
+.editable-statistic-number:hover .text-edit{
+    display: inline-block;
+    color: #fff;
+}
+
+.editable-team-member{
+    position: relative;
+}
+
+.editable-team-member .btn-category{
+visibility: hidden;
+    position: absolute;
+    bottom: 5px;
+    left: 37%;
+}
+.editable-team-member:hover .btn-category{
+    visibility: visible;
+}
+.editable-testimonils-headline:hover .text-edit{
+    display: inline-block;
+}
+.editable-testimonils-header:hover .text-edit{
+    display: inline-block;
+}
+.editable-testimonils-paragraph:hover .text-edit{
+    display: inline-block;
+}
+.editable-tesiteminial-contents{
+    position: relative;
+}
+.tesiteminial-contents-edit{
+    visibility: hidden;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: #fff;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.editable-tesiteminial-contents:hover .tesiteminial-contents-edit{
+    visibility: visible;
+    z-index: 2;
+}
+.editable-licenses-header:hover .text-edit{
+    display: inline-block;
+}
+.licenses-items:nth-child(even){
+    direction: ltr;
+}
+.licenses-items:nth-child(odd){
+    direction: rtl;
+}
+.editable-license-item{
+    position: relative;
+}
+.editable-license-item:hover .even-license-edit{
+    visibility: visible;
+}
+
+.even-license-edit{
+    visibility: hidden;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #fff;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.editable-license-item:hover .odd-license-edit{
+    visibility: visible;
+}
+
+.odd-license-edit{
+    visibility: hidden;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: #fff;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.editable-contact-us-headline:hover .text-edit{
+    display: inline-block;
+}
+.editable-contact-us-header:hover .text-edit{
+    display: inline-block;
+}
+.editable-contact-us-paragraph:hover .text-edit{
+    display: inline-block;
+}
+.editable-contact-us-form-submit:hover .text-edit{
+    display: inline-block;
+}

@@ -93,7 +93,7 @@ https://templatemo.com/tm-586-scholar
                 <i class="fa-solid fa-camera-viewfinder fa-2x fa-inverse pointer"></i>
               </label>
               <input type="file" class="file-input-hidden" name="hero_image" id="hero-image" accept="image/*"
-                class="form-control" data-target="#hero-section" data-bg="true">
+                class="form-control my-2" data-target="#hero-section" data-bg="true">
             </div>
             <div class="header-text">
               <span class="category editable-hero-top-btn">
@@ -133,54 +133,78 @@ https://templatemo.com/tm-586-scholar
         <div class="col-lg-4 col-md-6">
           <div class="service-item">
             <div class="icon editable-abilities-image">
-              <i class="fa-solid fa-camera-viewfinder fa-2x text-primary abilities-image-edit"></i>
-              <img src="assets/images/service-01.png" alt="online degrees">
+              <label for="abilities_01" class="file-input-hidden-label">
+                <i class="fa-solid fa-camera-viewfinder fa-2x text-primary abilities-image-edit"></i>
+              </label>
+              <input type="file" class="file-input-hidden" name="abilities_image_01" id="abilities_01" accept="image/*"
+              class="form-control my-2" data-target="#abilities_image_01" data-bg="false">
+              <img src="assets/images/service-01.png" alt="online degrees" id="abilities_image_01">
             </div>
             <div class="main-content">
-              <h4 class="editable-abilities-header">
-                Online Degrees
-                <i class="fa-solid fa-edit fa-1x text-edit"></i>
-              </h4>
-              <p class="editable-abilities-paragraph">
-                Whenever you need free templates in HTML CSS, you just remember TemplateMo website.
-                <i class="fa-solid fa-edit fa-1x text-edit"></i>
-              </p>
+              <div class="editable-abilities-header">
+                <i class="fa-solid fa-edit fa-1x text-edit" data-modal="#abilities-01-header-modal"></i>
+                <h4 class="d-inline-block" id="abilities-01-header">
+                  Online Degrees
+                </h4>
+              </div>
+              <div class="editable-abilities-paragraph">
+                <p class="d-inline-block mb-0" id="abilities-01-paragraph">
+                  You can browse free templates based on different tags such as digital marketing, etc.
+                </p>
+                <i class="fa-solid fa-edit fa-1x text-edit" data-modal="#abilities-01-paragraph-modal"></i>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="service-item">
             <div class="icon editable-abilities-image">
-              <i class="fa-solid fa-camera-viewfinder fa-2x text-primary abilities-image-edit"></i>
-              <img src="assets/images/service-02.png" alt="short courses">
+              <label for="abilities_02" class="file-input-hidden-label">
+                <i class="fa-solid fa-camera-viewfinder fa-2x text-primary abilities-image-edit"></i>
+              </label>
+              <input type="file" class="file-input-hidden" name="abilities_image_02" id="abilities_02" accept="image/*"
+              class="form-control my-2" data-target="#abilities_image_02" data-bg="false">
+              <img src="assets/images/service-02.png" alt="short courses" id="abilities_image_02">
             </div>
             <div class="main-content">
-              <h4 class="editable-abilities-header">
-                Short Courses
-                <i class="fa-solid fa-edit fa-1x text-edit"></i>
-              </h4>
-              <p class="editable-abilities-paragraph">
-                You can browse free templates based on different tags such as digital marketing, etc.
-                <i class="fa-solid fa-edit fa-1x text-edit"></i>
-              </p>
+              <div class="editable-abilities-header">
+                <i class="fa-solid fa-edit fa-1x text-edit" data-modal="#abilities-02-header-modal"></i>
+                <h4 class="d-inline-block" id="abilities-02-header">
+                  Short Courses
+                </h4>
+              </div>
+              <div class="editable-abilities-paragraph">
+                <p class="d-inline-block mb-0" id="abilities-02-paragraph">
+                  You can browse free templates based on different tags such as digital marketing, etc.
+                </p>
+                <i class="fa-solid fa-edit fa-1x text-edit" data-modal="#abilities-02-paragraph-modal"></i>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="service-item">
             <div class="icon editable-abilities-image">
-              <i class="fa-solid fa-camera-viewfinder fa-2x text-primary abilities-image-edit"></i>
-              <img src="assets/images/service-03.png" alt="web experts">
+              <label for="abilities_03" class="file-input-hidden-label">
+                <i class="fa-solid fa-camera-viewfinder fa-2x text-primary abilities-image-edit"></i>
+              </label>
+              <input type="file" class="file-input-hidden" name="abilities_image_03" id="abilities_03" accept="image/*"
+              class="form-control my-2" data-target="#abilities_image_03" data-bg="false">
+              <img src="assets/images/service-03.png" alt="web experts" id="abilities_image_03">
             </div>
             <div class="main-content">
-              <h4 class="editable-abilities-header">
-                Web Experts
-                <i class="fa-solid fa-edit fa-1x text-edit"></i>
-              </h4>
-              <p class="editable-abilities-paragraph">
-                You can start learning HTML CSS by modifying free templates from our website too.
-                <i class="fa-solid fa-edit fa-1x text-edit"></i>
-              </p>
+              <div class="editable-abilities-header">
+                <i class="fa-solid fa-edit fa-1x text-edit"  data-modal="#abilities-03-header-modal"></i>
+                <h4 class="d-inline-block"  id="abilities-03-header">
+                  Web Experts
+                </h4>
+              </div>
+              <div class="editable-abilities-paragraph">
+                <p class="d-inline-block mb-0" id="abilities-03-paragraph">
+                  You can browse free templates based on different tags such as digital marketing, etc.
+                </p>
+                <i class="fa-solid fa-edit fa-1x text-edit" data-modal="#abilities-03-paragraph-modal"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -715,7 +739,7 @@ https://templatemo.com/tm-586-scholar
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
               <label for="">Hero top button text</label>
-              <input type="text" name="hero_top_btn" class="form-control" id="hero-top-btn-input" placeholder="Hero top button text" required>
+              <input type="text" name="hero_top_btn" class="form-control my-2" id="hero-top-btn-input" placeholder="Hero top button text" required>
             </div>
           </div>
         </div>
@@ -739,7 +763,7 @@ https://templatemo.com/tm-586-scholar
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
               <label for="">Hero section header</label>
-              <input type="text" name="hero_header" class="form-control" id="hero-header-input" placeholder="Hero section header" required>
+              <input type="text" name="hero_header" class="form-control my-2" id="hero-header-input" placeholder="Hero section header" required>
             </div>
           </div>
         </div>
@@ -763,7 +787,7 @@ https://templatemo.com/tm-586-scholar
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
               <label for="">Hero section paragraph</label>
-              <textarea type="text" name="her_paragrah" class="form-control" id="hero-paragraph-input" placeholder="Hero section paragraph" rows="3" required></textarea>
+              <textarea type="text" name="hero_paragrah" class="form-control my-2" id="hero-paragraph-input" placeholder="Hero section paragraph" rows="3" required></textarea>
             </div>
           </div>
         </div>
@@ -787,12 +811,156 @@ https://templatemo.com/tm-586-scholar
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
               <label for="">Hero bottom button text</label>
-              <input type="text" name="her_bottom_input" class="form-control" id="hero-bottom-btn-input" placeholder="Hero bottom button text" required>
+              <input type="text" name="hero_bottom_input" class="form-control my-2" id="hero-bottom-btn-input" placeholder="Hero bottom button text" required>
             </div>
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn-category-danger close" data-dismiss="#hero-bottom-btn-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="abilities-01-header-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">First Ability header</h5>
+      </div>
+      <form class="change-content" data-source="#abilities-01-header-input" data-target="#abilities-01-header" data-modal="#abilities-01-header-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">First Ability header</label>
+              <input type="text" name="abilities-01-header" class="form-control my-2" id="abilities-01-header-input" placeholder="First Ability header" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#abilities-01-header-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="abilities-02-header-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Second Ability header</h5>
+      </div>
+      <form class="change-content" data-source="#abilities-02-header-input" data-target="#abilities-02-header" data-modal="#abilities-02-header-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Second Ability header</label>
+              <input type="text" name="abilities-02-header" class="form-control my-2" id="abilities-02-header-input" placeholder="Second Ability header" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#abilities-02-header-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="abilities-03-header-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Third Ability header</h5>
+      </div>
+      <form class="change-content" data-source="#abilities-03-header-input" data-target="#abilities-03-header" data-modal="#abilities-03-header-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Third Ability header</label>
+              <input type="text" name="abilities-03-header" class="form-control my-2" id="abilities-03-header-input" placeholder="Third Ability header" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#abilities-03-header-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="abilities-01-paragraph-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">First section paragraph</h5>
+      </div>
+      <form class="change-content" data-source="#abilities-01-paragraph-input" data-target="#abilities-01-paragraph" data-modal="#abilities-01-paragraph-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">First section paragraph</label>
+              <textarea type="text" name="abilities-01_paragrah" class="form-control my-2" id="abilities-01-paragraph-input" placeholder="First section paragraph" rows="3" required></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#abilities-01-paragraph-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="abilities-02-paragraph-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Second section paragraph</h5>
+      </div>
+      <form class="change-content" data-source="#abilities-02-paragraph-input" data-target="#abilities-02-paragraph" data-modal="#abilities-02-paragraph-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Second section paragraph</label>
+              <textarea type="text" name="abilities-02_paragrah" class="form-control my-2" id="abilities-02-paragraph-input" placeholder="Second section paragraph" rows="3" required></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#abilities-02-paragraph-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="abilities-03-paragraph-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Third section paragraph</h5>
+      </div>
+      <form class="change-content" data-source="#abilities-03-paragraph-input" data-target="#abilities-03-paragraph" data-modal="#abilities-03-paragraph-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Third section paragraph</label>
+              <textarea type="text" name="abilities-03_paragrah" class="form-control my-2" id="abilities-03-paragraph-input" placeholder="Third section paragraph" rows="3" required></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#abilities-03-paragraph-modal">Close</button>
           <button type="submit" class="btn-category ">Save changes</button>
         </div>
       </form>

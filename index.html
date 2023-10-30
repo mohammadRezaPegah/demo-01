@@ -408,30 +408,30 @@ https://templatemo.com/tm-586-scholar
             <div class="row">
               <div class="col-lg-3 col-md-6">
                 <div class="counter editable-statistic-number">
-                  <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
-                   <p class="count-text ">Happy Students</p>
-                  <i class="fa-solid fa-edit fa-1x fa-inverse text-edit"></i>
+                  <h2 class="timer count-title count-number" id="first_statistic_count" data-to="150" data-speed="1000"></h2>
+                  <p class="count-text" id="first_statistic_description">Happy Students</p>
+                  <i class="fa-solid fa-edit fa-1x fa-inverse text-edit" data-count="#first_statistic_count" data-description="#first_statistic_description"></i>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter editable-statistic-number">
-                  <h2 class="timer count-title count-number" data-to="804" data-speed="1000"></h2>
-                  <p class="count-text ">Course Hours</p>
-                  <i class="fa-solid fa-edit fa-1x fa-inverse text-edit"></i>
+                  <h2 class="timer count-title count-number" id="second_statistic_count" data-to="804" data-speed="1000"></h2>
+                  <p class="count-text" id="second_statistic_description">Course Hours</p>
+                  <i class="fa-solid fa-edit fa-1x fa-inverse text-edit" data-count="#second_statistic_count" data-description="#second_statistic_description"></i>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter editable-statistic-number">
-                  <h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
-                  <p class="count-text ">Employed Students</p>
-                  <i class="fa-solid fa-edit fa-1x fa-inverse text-edit"></i>
+                  <h2 class="timer count-title count-number" id="third_statistic_count" data-to="50" data-speed="1000"></h2>
+                  <p class="count-text" id="third_statistic_description">Employed Students</p>
+                  <i class="fa-solid fa-edit fa-1x fa-inverse text-edit" data-count="#third_statistic_count" data-description="#third_statistic_description"></i>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter end editable-statistic-number">
-                  <h2 class="timer count-title count-number" data-to="15" data-speed="1000"></h2>
-                  <p class="count-text ">Years Experience</p>
-                  <i class="fa-solid fa-edit fa-1x fa-inverse text-edit"></i>
+                  <h2 class="timer count-title count-number" id="forth_statistic_count" data-to="15" data-speed="1000"></h2>
+                  <p class="count-text" id="forth_statistic_description">Years Experience</p>
+                  <i class="fa-solid fa-edit fa-1x fa-inverse text-edit" data-count="#forth_statistic_count" data-description="#forth_statistic_description"></i>
                 </div>
               </div>
             </div>
@@ -1068,6 +1068,34 @@ https://templatemo.com/tm-586-scholar
         </div>
         <div class="modal-footer">
           <button type="button" class="btn-category-danger close" data-dismiss="#about-items-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="statistic-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">statistic Items</h5>
+      </div>
+      <form class="statistic-edit-form">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Count</label>
+              <input type="number" name="statistic_count" id="edit_statistic_count" class="form-control my-2" placeholder="1000" required>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Description</label>
+              <input type="text" name="statistic_text" id="edit_statistic_text" class="form-control my-2" placeholder="test" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#statistic-modal">Close</button>
           <button type="submit" class="btn-category ">Save changes</button>
         </div>
       </form>

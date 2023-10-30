@@ -1,4 +1,5 @@
 let aboutItemsTarget = {};
+let statisticTarget = {};
 const loadSelectedImage = (input, target, bg) => {
   if (input.files && input.files[0]) {
     const reader = new FileReader();
@@ -70,4 +71,28 @@ $(document.body).on("submit", ".about-edit-item-form", (e) => {
   $(aboutItemsTarget.title).html(title);
   $(aboutItemsTarget.description).html(description);
   $("#about-items-modal").modal("toggle");
+});
+
+$(document.body).on("click", ".editable-statistic-number .text-edit", (e) => {
+  let countTarget = $(e.target).data("count");
+  let descriptionTarget = $(e.target).data("description");
+  let countData = $(countTarget).data("to");
+  let descriptionData = $(descriptionTarget).html();
+  statisticTarget = {
+    countTarget: countTarget,
+    descriptionTarget: descriptionTarget,
+  };
+  $("#edit_statistic_count").val(countData);
+  $("#edit_statistic_text").val(descriptionData);
+  $("#statistic-modal").modal("toggle");
+});
+
+$(document.body).on("submit", ".statistic-edit-form", (e) => {
+  e.preventDefault();
+  let count = $("#edit_statistic_count").val();
+  let description = $("#edit_statistic_text").val();
+  $(statisticTarget.countTarget).data("to", count);
+  $(statisticTarget.countTarget).html(count);
+  $(statisticTarget.descriptionTarget).html(description);
+  $("#statistic-modal").modal("toggle");
 });

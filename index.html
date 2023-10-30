@@ -87,31 +87,37 @@ https://templatemo.com/tm-586-scholar
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="owl-carousel owl-banner">
-            <div class="item item-1 editable">
-              <div class="main-edit">
-                <i class="fa-solid fa-camera-viewfinder fa-2x fa-inverse"></i>
-              </div>
-              <div class="header-text">
-                <span class="category editable-hero-top-btn">
-                  <a href="#courses" class="fa-inverse">Our Courses</a>
-                  <i class="fa-solid fa-edit fa-1x fa-inverse text-edit"></i>
-                </span>
-                <h2 class="editable-hero-header">
+          <div class="item item-1 editable" id="hero-section">
+            <div class="main-edit">
+              <label for="hero-image" class="file-input-hidden-label">
+                <i class="fa-solid fa-camera-viewfinder fa-2x fa-inverse pointer"></i>
+              </label>
+              <input type="file" class="file-input-hidden" name="hero_image" id="hero-image" accept="image/*"
+                class="form-control" data-target="#hero-section" data-bg="true">
+            </div>
+            <div class="header-text">
+              <span class="category editable-hero-top-btn">
+                <a href="#courses" class="fa-inverse" id="hero-top-btn">Our Products</a>
+                <i class="fa-solid fa-edit fa-1x fa-inverse text-edit" data-modal="#hero-top-btn-modal"></i>
+              </span>
+              <div class="editable-hero-header">
+                <i class="fa-solid fa-edit h2 fa-inverse text-edit" data-modal="#hero-header-modal"></i>
+                <h2 class="d-inline-block" id="hero-header">
                   With Scholar Teachers, Everything Is Easier
-                  <i class="fa-solid fa-edit fa-1x fa-inverse text-edit"></i>
                 </h2>
-                <p class="editable-hero-paragraph">
+              </div>
+              <div class="editable-hero-paragraph">
+                <i class="fa-solid fa-edit fa-1x fa-inverse text-edit" data-modal="#hero-paragraph-modal"></i>
+                <p class="d-inline-block" id="hero-paragraph">
                   Scholar is free CSS template designed by TemplateMo for online educational related websites. This layout is based on the famous Bootstrap v5.3.0 framework.
-                  <i class="fa-solid fa-edit fa-1x fa-inverse text-edit"></i>
                 </p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#contact" class="editable-hero-bottom-btn">
-                      CONTACT US
-                      <i class="fa-solid fa-edit fa-1x fa-inverse text-primary text-edit"></i>
-                    </a>
-                  </div>
+              </div>
+              <div class="buttons">
+                <div class="main-button editable-hero-bottom-btn">
+                  <a href="#contact" id="hero-bottom-btn">
+                    CONTACT US
+                  </a>
+                  <i class="fa-solid fa-edit fa-1x fa-inverse text-primary text-edit" data-modal="#hero-bottom-btn-modal"></i>
                 </div>
               </div>
             </div>
@@ -271,30 +277,16 @@ https://templatemo.com/tm-586-scholar
         <div class="col-lg-12 text-center">
           <div class="section-heading">
             <h6 class="editable-course-headline">
-              Latest Courses
+              Our Products
               <i class="fa-solid fa-edit fa-1x text-edit"></i>
             </h6>
             <h2 class="editable-course-headline">
-              Latest Courses
+              Our Products
               <i class="fa-solid fa-edit fa-1x text-edit"></i>
             </h2>
           </div>
         </div>
       </div>
-      <ul class="event_filter">
-        <li>
-          <a class="is_active" href="#!" data-filter="*">Show All</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".design">Webdesign</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".development">Development</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".wordpress">Wordpress</a>
-        </li>
-      </ul>
       <div class="row event_box">
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
           <div class="events_item">
@@ -710,6 +702,104 @@ https://templatemo.com/tm-586-scholar
     </div>
   </footer>
 
+  <!-- Modals start -->
+  <!-- Modal -->
+<div class="modal fade" id="hero-top-btn-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hero section top button text</h5>
+      </div>
+      <form class="change-content" data-source="#hero-top-btn-input" data-target="#hero-top-btn" data-modal="#hero-top-btn-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Hero top button text</label>
+              <input type="text" name="hero_top_btn" class="form-control" id="hero-top-btn-input" placeholder="Hero top button text" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#hero-top-btn-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="hero-header-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hero section header</h5>
+      </div>
+      <form class="change-content" data-source="#hero-header-input" data-target="#hero-header" data-modal="#hero-header-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Hero section header</label>
+              <input type="text" name="hero_header" class="form-control" id="hero-header-input" placeholder="Hero section header" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#hero-header-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="hero-paragraph-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hero section paragraph</h5>
+      </div>
+      <form class="change-content" data-source="#hero-paragraph-input" data-target="#hero-paragraph" data-modal="#hero-paragraph-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Hero section paragraph</label>
+              <textarea type="text" name="her_paragrah" class="form-control" id="hero-paragraph-input" placeholder="Hero section paragraph" rows="3" required></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#hero-paragraph-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="hero-bottom-btn-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hero section bottom button text</h5>
+      </div>
+      <form class="change-content" data-source="#hero-bottom-btn-input" data-target="#hero-bottom-btn" data-modal="#hero-bottom-btn-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Hero bottom button text</label>
+              <input type="text" name="her_bottom_input" class="form-control" id="hero-bottom-btn-input" placeholder="Hero bottom button text" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#hero-bottom-btn-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <!-- Modals end -->
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -718,6 +808,7 @@ https://templatemo.com/tm-586-scholar
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/editable.js"></script>
 
   </body>
 </html>

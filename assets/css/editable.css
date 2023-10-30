@@ -10,6 +10,9 @@
     visibility: hidden;
 }
 
+.editable{
+    position: relative;
+}
 .editable:hover .main-edit{
     visibility: visible;
 }
@@ -180,4 +183,7 @@ visibility: hidden;
 }
 .editable-contact-us-form-submit:hover .text-edit{
     display: inline-block;
+}
+.file-input-hidden {
+    display: none;
 }

@@ -148,3 +148,45 @@ $(document.body).on("submit", ".team-edit-form", (e) => {
   $(`.team-member-${id} .team-member-instagram`).attr("href", instagram);
   $("#sale-expert-edit-modal").modal("toggle");
 });
+
+$(document.body).on("click", ".even-license-edit", (e) => {
+  const id = $(e.target).data("id");
+  let targetRecord = licenses.find((item) => {
+    return item.id === id;
+  });
+  $("#edit_license_image").attr(
+    "src",
+    baseLicensesImageUrl + targetRecord.image
+  );
+  $("#edit_license_id").val(targetRecord.id);
+  $("#edit_license_image").attr("alt", targetRecord.name);
+  $("#edit_license_name").val(targetRecord.name);
+  $("#edit_license_date").val(targetRecord.date);
+  $("#edit_license_description").val(targetRecord.description);
+
+  $("#license-edit-modal").modal("toggle");
+});
+
+$(document.body).on("submit", ".license-edit-form", (e) => {
+  e.preventDefault();
+  const data = new FormData(e.target);
+  const id = data.get("id");
+  const name = data.get("license_name");
+  const date = data.get("license_date");
+  const imageUri = $("#edit_license_image").attr("src");
+  const description = data.get("license_description");
+  let targetRecord = licenses.find((item) => {
+    return item.id == id;
+  });
+
+  targetRecord.image = imageUri;
+  targetRecord.name = name;
+  targetRecord.data = date;
+  targetRecord.description = description;
+  console.log(targetRecord, imageUri, name, date, description);
+  $(`.license-image-${id}`).attr("src", imageUri);
+  $(`.license-name-${id}`).html(name);
+  $(`.license-date-${id}`).html(date);
+  $(`.license-description-${id}`).html(description);
+  $("#license-edit-modal").modal("toggle");
+});

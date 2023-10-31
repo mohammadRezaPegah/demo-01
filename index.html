@@ -521,10 +521,12 @@ https://templatemo.com/tm-586-scholar
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-heading">
-            <h2 class="editable-licenses-header">
-              Licenses
-              <i class="fa-solid fa-edit text-edit"></i>
-            </h2>
+            <div class="editable-licenses-header">
+              <h2 class="d-inline-block" id="licenses-header">
+                Licenses
+              </h2>
+              <i class="fa-solid fa-edit text-edit" data-modal="#licenses-header-modal"></i>
+            </div>
           </div>
         </div>
         <div class="col-lg-12 col-md-6 licenses-items">
@@ -532,25 +534,24 @@ https://templatemo.com/tm-586-scholar
             <div class="row">
               <div class="col-lg-3">
                 <div class="image">
-                  <img src="assets/images/event-01.jpg" alt="">
+                  <img src="assets/images/event-01.jpg" alt="" class="license-image-1">
                 </div>
               </div>
               <div class="col-lg-9">
                 <ul>
                   <li>
-                    <h4>UI Best Practices</h4>
+                    <h4 class="license-name-1">UI Best Practices</h4>
                   </li>
                   <li>
-                    <span>Date:</span>
-                    <h6>16 Feb 2036</h6>
+                    <h6 class="license-date-1">16 Feb 2036</h6>
                   </li>
                   <li>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatem aliquam quasi.</p>
+                    <p class="license-description-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatem aliquam quasi.</p>
                   </li>
                 </ul>
               </div>
             </div>
-            <i class="fa-solid fa-edit fa-1x text-primary even-license-edit"></i>
+            <i class="fa-solid fa-edit fa-1x text-primary even-license-edit" data-id="1"></i>
           </div>
         </div>
         <div class="col-lg-12 col-md-6 licenses-items">
@@ -558,25 +559,24 @@ https://templatemo.com/tm-586-scholar
             <div class="row">
               <div class="col-lg-3">
                 <div class="image">
-                  <img src="assets/images/event-02.jpg" alt="">
+                  <img src="assets/images/event-02.jpg" alt="" class="license-image-2">
                 </div>
               </div>
               <div class="col-lg-9">
                 <ul>
                   <li>
-                    <h4>New Design Trend</h4>
+                    <h4 class="license-name-2">UI Best Practices</h4>
                   </li>
                   <li>
-                    <span>Date:</span>
-                    <h6>24 Feb 2036</h6>
+                    <h6 class="license-date-2">16 Feb 2036</h6>
                   </li>
                   <li>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatem aliquam quasi.</p>
+                    <p class="license-description-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatem aliquam quasi.</p>
                   </li>
                 </ul>
               </div>
             </div>
-            <i class="fa-solid fa-edit fa-1x text-primary odd-license-edit"></i>
+            <i class="fa-solid fa-edit fa-1x text-primary even-license-edit" data-id="2"></i>
           </div>
         </div>
         <div class="col-lg-12 col-md-6 licenses-items">
@@ -584,31 +584,25 @@ https://templatemo.com/tm-586-scholar
             <div class="row">
               <div class="col-lg-3">
                 <div class="image">
-                  <img src="assets/images/event-03.jpg" alt="">
+                  <img src="assets/images/event-03.jpg" alt="" class="license-image-3">
                 </div>
               </div>
               <div class="col-lg-9">
                 <ul>
                   <li>
-                    <h4>Web Programming</h4>
+                    <h4 class="license-name-3">UI Best Practices</h4>
                   </li>
                   <li>
-                    <span>Date:</span>
-                    <h6>12 Mar 2036</h6>
+                    <h6 class="license-date-3">16 Feb 2036</h6>
                   </li>
                   <li>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatem aliquam quasi.</p>
+                    <p class="license-description-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatem aliquam quasi.</p>
                   </li>
                 </ul>
               </div>
             </div>
-            <i class="fa-solid fa-edit fa-1x text-primary even-license-edit"></i>
+            <i class="fa-solid fa-edit fa-1x text-primary even-license-edit" data-id="3"></i>
           </div>
-        </div>
-        <div class="col-lg-12 text-center">
-          <span class="btn-category">
-            <a href="javascript:void(0)" class="fa-inverse"> <i class="fa-solid fa-plus fa-1x"></i> Add another license</a>
-        </span>
         </div>
       </div>
     </div>
@@ -1098,11 +1092,76 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="licenses-header-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Licenses header</h5>
+      </div>
+      <form class="change-content" data-source="#licenses-header-input" data-target="#licenses-header" data-modal="#licenses-header-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">licenses header</label>
+              <input type="text" name="licenses-header" class="form-control my-2" id="licenses-header-input" placeholder="Licenses header" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#licenses-header-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="license-edit-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit license</h5>
+      </div>
+      <form class="license-edit-form" enctype="multipart/form-data">
+        <input type="hidden" name="id" id="edit_license_id" value="">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                <label for="edit_license_image_input">
+                  <img src="" alt="" id="edit_license_image" class="license-edit-img">
+                </label>
+                <input type="file" class="file-input-hidden" name="image" id="edit_license_image_input" accept="image/*"
+                  class="form-control my-2" data-target="#edit_license_image" data-bg="false">
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="edit_license_name">Name</label>
+              <input type="text" name="license_name" id="edit_license_name" class="form-control my-2" placeholder="Sale Expert" required>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="edit_license_date">Date</label>
+              <input type="date" name="license_date" id="edit_license_date" class="form-control my-2" placeholder="date" required>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="edit_license_description">description</label>
+              <textarea type="text" name="license_description" id="edit_license_description" class="form-control my-2" placeholder="0000000000" required></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#license-edit-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
   <!-- Modals end -->
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script>
     const baseImageUrl = 'assets/images/';
+    const baseLicensesImageUrl = 'assets/images/';
     let aboutItems = [
       {
         id: 1,
@@ -1162,7 +1221,32 @@ https://templatemo.com/tm-586-scholar
         instagram: 'https://www.instagram.com/invites/contact/?i=kjbtesef58x&utm_content=rx4m5v4',
         email: 'info@cilivo.com',
       },
+    ];
+
+    let licenses = [
+      {
+        id: 1,
+        image : "event-01.jpg",
+        name : "UI Best Practices",
+        data : "16 Feb 2036",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatem aliquam quasi."
+      },
+      {
+        id: 2,
+        image : "event-02.jpg",
+        name : "UI Best Practices",
+        data : "16 Feb 2036",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatem aliquam quasi."
+      },
+      {
+        id: 3,
+        image : "event-03.jpg",
+        name : "UI Best Practices",
+        data : "16 Feb 2036",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatem aliquam quasi."
+      },
     ]
+  
   </script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>

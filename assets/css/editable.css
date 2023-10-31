@@ -215,3 +215,7 @@ visibility: hidden;
 .image-pointer:hover{
     opacity: 0.75;
 }
+.license-edit-img{
+    border-radius: 27px;
+    max-height: 150px;
+}

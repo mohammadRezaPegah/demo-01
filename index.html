@@ -59,7 +59,7 @@ https://templatemo.com/tm-586-scholar
                     <ul class="nav">
                       <li class="scroll-to-section"><a href="#top" class="active" id="menu-home">Home</a></li>
                       <li class="scroll-to-section"><a href="#abilities" id="menu-abilities">Abilities</a></li>
-                      <li class="scroll-to-section"><a href="#courses" id="menu-course">Products</a></li>
+                      <li class="scroll-to-section"><a href="#courses" id="menu-products">Products</a></li>
                       <li class="scroll-to-section"><a href="#team" id="menu-team">Team</a></li>
                       <li class="scroll-to-section"><a href="#licenses" id="menu-licenses">Licenses</a></li>
                       <li class="scroll-to-section"><a href="#contact" id="menu-contact">Contact Us</a></li>
@@ -121,6 +121,18 @@ https://templatemo.com/tm-586-scholar
 
   <div class="services section" id="abilities">
     <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <div class="editable-course-headline">
+              <h2 class="d-inline-block" id="abilities-header">
+                Our Abilities
+              </h2>
+              <i class="fa-solid fa-edit fa-1x text-edit" data-modal="#abilities-header-modal"></i>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-lg-4 col-md-6">
           <div class="service-item">
@@ -298,14 +310,12 @@ https://templatemo.com/tm-586-scholar
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-heading">
-            <h6 class="editable-course-headline">
-              Our Products
-              <i class="fa-solid fa-edit fa-1x text-edit"></i>
-            </h6>
-            <h2 class="editable-course-headline">
-              Our Products
-              <i class="fa-solid fa-edit fa-1x text-edit"></i>
-            </h2>
+            <div class="editable-course-headline">
+              <h2 class="d-inline-block" id="products-header">
+                Our Products
+              </h2>
+              <i class="fa-solid fa-edit fa-1x text-edit" data-modal="#products-header-modal"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -436,6 +446,18 @@ https://templatemo.com/tm-586-scholar
   <div class="team section" id="team">
     <div class="container">
       <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <div class="editable-course-headline">
+              <h2 class="d-inline-block" id="team-header">
+                Our Team
+              </h2>
+              <i class="fa-solid fa-edit fa-1x text-edit" data-modal="#team-header-modal"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 pt-5">
         <div class="col-lg-3 col-md-6">
           <div class="team-member editable-team-member">
             <div class="main-content team-member-1">
@@ -1250,6 +1272,90 @@ https://templatemo.com/tm-586-scholar
         </div>
         <div class="modal-footer">
           <button type="button" class="btn-category-danger close" data-dismiss="#contact-us-submit-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="products-header-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Products header</h5>
+      </div>
+      <form class="change-content" data-source="#products-header-input" data-menu="#products-header-menu" data-target="#products-header" data-modal="#products-header-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Products header</label>
+              <input type="text" name="products-header" class="form-control my-2 change-menu" id="products-header-input" placeholder="Products header" data-target="#products-header-menu" required>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Products menu</label>
+              <input type="text" name="products-menu" class="form-control my-2" id="products-header-menu" placeholder="Products menu" data-target="#menu-products" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#products-header-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="abilities-header-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Abilities header</h5>
+      </div>
+      <form class="change-content" data-source="#abilities-header-input" data-menu="#abilities-header-menu" data-target="#abilities-header" data-modal="#abilities-header-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Abilities header</label>
+              <input type="text" name="abilities-header" class="form-control my-2 change-menu" id="abilities-header-input" placeholder="abilities header" data-target="#abilities-header-menu" required>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Abilities menu</label>
+              <input type="text" name="abilities-menu" class="form-control my-2" id="abilities-header-menu" placeholder="abilities menu" data-target="#menu-abilities" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#abilities-header-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="team-header-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Team header</h5>
+      </div>
+      <form class="change-content" data-source="#team-header-input" data-menu="#team-header-menu" data-target="#team-header" data-modal="#team-header-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Team header</label>
+              <input type="text" name="team-header" class="form-control my-2 change-menu" id="team-header-input" placeholder="team header" data-target="#team-header-menu" required>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">Team menu</label>
+              <input type="text" name="team-menu" class="form-control my-2" id="team-header-menu" placeholder="team menu" data-target="#menu-team" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#team-header-modal">Close</button>
           <button type="submit" class="btn-category ">Save changes</button>
         </div>
       </form>

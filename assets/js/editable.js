@@ -132,6 +132,13 @@ $(document.body).on("submit", ".team-edit-form", (e) => {
   const imageInput = document.getElementById("edit_team_image");
   data.append("image", imageInput.files[0]); // Assuming you want to upload only one file.
 
+  targetRecord.id = id;
+  targetRecord.image = imageUri;
+  targetRecord.work_field = workField;
+  targetRecord.name = name;
+  targetRecord.phone = phone;
+  targetRecord.instagram = instagram;
+  targetRecord.email = email;
   $(`.team-member-${id} .team-member-image`).attr("alt", name);
   $(`.team-member-${id} .team-member-image`).attr("src", imageUri);
   $(`.team-member-${id} .team-member-work-field`).html(workField);

@@ -1,5 +1,6 @@
 let aboutItemsTarget = {};
 let statisticTarget = {};
+let teamMemberTargetId;
 const loadSelectedImage = (input, target, bg) => {
   if (input.files && input.files[0]) {
     const reader = new FileReader();
@@ -95,4 +96,48 @@ $(document.body).on("submit", ".statistic-edit-form", (e) => {
   $(statisticTarget.countTarget).html(count);
   $(statisticTarget.descriptionTarget).html(description);
   $("#statistic-modal").modal("toggle");
+});
+
+$(document.body).on("click", ".sale-expert-edit", (e) => {
+  let id = $(e.target).data("id");
+  teamMemberTargetId = id;
+  let targetRecord = saleExperts.find((item) => {
+    return item.id === id;
+  });
+  $("#edit_team_member_image").attr("src", baseImageUrl + targetRecord.image);
+  $("#edit_team_member_image").attr("alt", targetRecord.name);
+  $("#edit_team_id").val(targetRecord.id);
+  $("#edit_team_work_field").val(targetRecord.work_field);
+  $("#edit_team_name").val(targetRecord.name);
+  $("#edit_team_phone").val(targetRecord.phone);
+  $("#edit_team_instagram").val(targetRecord.instagram);
+  $("#edit_team_email").val(targetRecord.email);
+  $("#sale-expert-edit-modal").modal("toggle");
+});
+
+$(document.body).on("submit", ".team-edit-form", (e) => {
+  e.preventDefault();
+  let targetRecord = saleExperts.find((item) => {
+    return item.id === teamMemberTargetId;
+  });
+  const data = new FormData(e.target);
+  const id = teamMemberTargetId;
+  const workField = data.get("work_field");
+  const name = data.get("name");
+  const phone = data.get("phone");
+  const email = data.get("email");
+  const instagram = data.get("instagram");
+  const imageUri = $("#edit_team_member_image").attr("src");
+  // Handle the file input
+  const imageInput = document.getElementById("edit_team_image");
+  data.append("image", imageInput.files[0]); // Assuming you want to upload only one file.
+
+  $(`.team-member-${id} .team-member-image`).attr("alt", name);
+  $(`.team-member-${id} .team-member-image`).attr("src", imageUri);
+  $(`.team-member-${id} .team-member-work-field`).html(workField);
+  $(`.team-member-${id} .team-member-name`).html(name);
+  $(`.team-member-${id} .team-member-email`).attr("href", `mailto:${email}`);
+  $(`.team-member-${id} .team-member-phone`).attr("href", `tel:${phone}`);
+  $(`.team-member-${id} .team-member-instagram`).attr("href", instagram);
+  $("#sale-expert-edit-modal").modal("toggle");
 });

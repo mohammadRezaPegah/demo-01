@@ -55,22 +55,14 @@ https://templatemo.com/tm-586-scholar
                         <h1>Scholar</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
-                    <!-- ***** Serach Start ***** -->
-                    <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
-                      </form>
-                    </div>
-                    <!-- ***** Serach Start ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                      <li class="scroll-to-section"><a href="#abilities">Abilities</a></li>
-                      <li class="scroll-to-section"><a href="#courses">Courses</a></li>
-                      <li class="scroll-to-section"><a href="#team">Team</a></li>
-                      <li class="scroll-to-section"><a href="#licenses">Licenses</a></li>
-                      <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
+                      <li class="scroll-to-section"><a href="#top" class="active" id="menu-home">Home</a></li>
+                      <li class="scroll-to-section"><a href="#abilities" id="menu-abilities">Abilities</a></li>
+                      <li class="scroll-to-section"><a href="#courses" id="menu-course">Products</a></li>
+                      <li class="scroll-to-section"><a href="#team" id="menu-team">Team</a></li>
+                      <li class="scroll-to-section"><a href="#licenses" id="menu-licenses">Licenses</a></li>
+                      <li class="scroll-to-section"><a href="#contact" id="menu-contact">Contact Us</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -613,18 +605,22 @@ https://templatemo.com/tm-586-scholar
       <div class="row">
         <div class="col-lg-6  align-self-center">
           <div class="section-heading">
-            <h6 class="editable-contact-us-headline">
+            <h6 class="editable-contact-us-headline" id="contact-us-headline">
               Contact Us
-              <i class="fa-solid fa-edit text-edit"></i>
+              <i class="fa-solid fa-edit text-edit" data-modal="#contact-us-headline-modal"></i>
             </h6>
-            <h2 class="editable-contact-us-header">
-              Feel free to contact us anytime
-              <i class="fa-solid fa-edit text-edit"></i>
-            </h2>
-            <p class="editable-contact-us-paragraph">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis consequatur omnis maiores, debitis porro autem eligendi iusto magni molestias fugiat commodi ullam nihil fugit vel excepturi recusandae itaque assumenda corrupti?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque sit natus quia dignissimos sint nulla laboriosam ab voluptates culpa numquam, et quod asperiores excepturi, optio corrupti temporibus aperiam quaerat enim. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam eos placeat laudantium quae quos sint sapiente vitae eaque, consequuntur necessitatibus maiores dolorem iusto error porro maxime fugit iste est ipsa.
-              <i class="fa-solid fa-edit text-edit"></i>
-            </p>
+            <div class="editable-contact-us-header">
+              <h2 class="d-inline-block" id="contact-us-header">
+                Feel free to contact us anytime
+              </h2>
+              <i class="fa-solid fa-edit text-edit" data-modal="#contact-us-header-modal"></i>
+            </div>
+            <div class="editable-contact-us-paragraph">
+              <p class="d-inline-block" id="contact-us-paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis consequatur omnis maiores, debitis porro autem eligendi iusto magni molestias fugiat commodi ullam nihil fugit vel excepturi recusandae itaque assumenda corrupti?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque sit natus quia dignissimos sint nulla laboriosam ab voluptates culpa numquam, et quod asperiores excepturi, optio corrupti temporibus aperiam quaerat enim. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam eos placeat laudantium quae quos sint sapiente vitae eaque, consequuntur necessitatibus maiores dolorem iusto error porro maxime fugit iste est ipsa.
+              </p>
+              <i class="fa-solid fa-edit text-edit" data-modal="#contact-us-paragraph-modal"></i>
+            </div>
           </div>
         </div>
         <div class="col-lg-6">
@@ -649,8 +645,8 @@ https://templatemo.com/tm-586-scholar
                 <div class="col-lg-12">
                   <fieldset>
                     <button type="submit" id="form-submit" class="orange-button editable-contact-us-form-submit">
-                      Send Message Now
-                      <i class="fa-solid fa-edit fa-1x text-edit"></i>
+                      <span id="contact-us-submit">Send Message Now</span>
+                      <i class="fa-solid fa-edit fa-1x text-edit" data-modal="#contact-us-submit-modal"></i>
                     </button>
                   </fieldset>
                 </div>
@@ -1099,12 +1095,16 @@ https://templatemo.com/tm-586-scholar
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Licenses header</h5>
       </div>
-      <form class="change-content" data-source="#licenses-header-input" data-target="#licenses-header" data-modal="#licenses-header-modal">
+      <form class="change-content" data-source="#licenses-header-input" data-menu="#licenses-header-menu" data-target="#licenses-header" data-modal="#licenses-header-modal">
         <div class="modal-body">
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
               <label for="">licenses header</label>
-              <input type="text" name="licenses-header" class="form-control my-2" id="licenses-header-input" placeholder="Licenses header" required>
+              <input type="text" name="licenses-header" class="form-control my-2 change-menu" id="licenses-header-input" placeholder="Licenses header" data-target="#licenses-header-menu" required>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">licenses menu</label>
+              <input type="text" name="licenses-menu" class="form-control my-2" id="licenses-header-menu" placeholder="licenses menu" data-target="#menu-licenses" required>
             </div>
           </div>
         </div>
@@ -1150,6 +1150,106 @@ https://templatemo.com/tm-586-scholar
         </div>
         <div class="modal-footer">
           <button type="button" class="btn-category-danger close" data-dismiss="#license-edit-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="contact-us-header-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">contact-us header</h5>
+      </div>
+      <form class="change-content" data-source="#contact-us-header-input" data-target="#contact-us-header" data-modal="#contact-us-header-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">contact-us header</label>
+              <input type="text" name="contact-us-header" class="form-control my-2" id="contact-us-header-input" placeholder="contact-us header" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#contact-us-header-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="contact-us-headline-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-headline">
+        <h5 class="modal-title" id="exampleModalLabel">contact-us headline</h5>
+      </div>
+      <form class="change-content" data-source="#contact-us-headline-input" data-menu="#contact-us-header-menu" data-target="#contact-us-headline" data-modal="#contact-us-headline-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">contact us headline</label>
+              <input type="text" name="contact-us-headline" class="form-control my-2 change-menu" id="contact-us-headline-input" placeholder="contact us headline" data-target="#contact-us-header-menu" required>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">contact us menu</label>
+              <input type="text" name="contact-us-menu" class="form-control my-2" id="contact-us-header-menu" placeholder="contact-us header" data-target="#menu-contact" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#contact-us-headline-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="contact-us-paragraph-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-paragraph">
+        <h5 class="modal-title" id="exampleModalLabel">contact-us paragraph</h5>
+      </div>
+      <form class="change-content" data-source="#contact-us-paragraph-input" data-target="#contact-us-paragraph" data-modal="#contact-us-paragraph-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">contact-us paragraph</label>
+              <textarea type="text" rows="3" name="contact-us-paragraph" class="form-control my-2" id="contact-us-paragraph-input" placeholder="contact us paragraph" required></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#contact-us-paragraph-modal">Close</button>
+          <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="contact-us-submit-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-submit">
+        <h5 class="modal-title" id="exampleModalLabel">contact us submit form button</h5>
+      </div>
+      <form class="change-content" data-source="#contact-us-submit-input" data-target="#contact-us-submit" data-modal="#contact-us-submit-modal">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <label for="">contact us submit form button</label>
+              <input type="text" name="contact-us-submit" class="form-control my-2" id="contact-us-submit-input" placeholder="submit" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#contact-us-submit-modal">Close</button>
           <button type="submit" class="btn-category ">Save changes</button>
         </div>
       </form>

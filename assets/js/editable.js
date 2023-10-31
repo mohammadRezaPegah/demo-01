@@ -27,12 +27,20 @@ $(document.body).on("click", ".close", (e) => {
 });
 $(document.body).on("submit", ".change-content", (e) => {
   e.preventDefault();
+  console.log($(e.target).data("menu") ? true : false);
   let target = $(e.target).data("target");
   let modal = $(e.target).data("modal");
   let source = $(e.target).data("source");
   let name = $(source).attr("name");
   let inf = $(source).val();
   $(target).html(inf);
+  if ($(e.target).data("menu")) {
+    const menuInput = $(e.target).data("menu");
+
+    let menu_inf = $(menuInput).val();
+    console.log("menu: ", $(menuInput).data("target"));
+    $($(menuInput).data("target")).html(menu_inf);
+  }
   $(modal).modal("toggle");
 });
 $(document.body).on("change", ".file-input-hidden", (e) => {
@@ -189,4 +197,9 @@ $(document.body).on("submit", ".license-edit-form", (e) => {
   $(`.license-date-${id}`).html(date);
   $(`.license-description-${id}`).html(description);
   $("#license-edit-modal").modal("toggle");
+});
+$(document.body).on("keyup", ".change-menu", (e) => {
+  let target = $(e.target).data("target");
+  let value = $(e.target).val();
+  $(target).val(value);
 });

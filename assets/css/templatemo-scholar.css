@@ -707,7 +707,7 @@ Banner Style
 }
 .btn-category {
   background-color: #7a6ad8;
-  border-color: #7a6ad8;
+  border: none;
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
@@ -718,7 +718,7 @@ Banner Style
 }
 .btn-category:hover {
   background-color: #442adb;
-  border-color: #442adb;
+  border: none;
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
@@ -729,7 +729,7 @@ Banner Style
 }
 .btn-category-danger {
   background-color: #d86a6a;
-  border-color: #d86a6a;
+  border: none;
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
@@ -740,7 +740,7 @@ Banner Style
 }
 .btn-category-danger:hover {
   background-color: #d71b1b;
-  border-color: #d71b1b;
+  border: none;
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;

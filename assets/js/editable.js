@@ -50,6 +50,13 @@ $(document.body).on("change", ".file-input-hidden", (e) => {
   let name = $(e.target).attr("name");
   loadSelectedImage(changed, target, bg);
 });
+$(document.body).on("change", ".file-input", (e) => {
+  let changed = e.target;
+  let target = $(e.target).data("target");
+  let bg = $(e.target).data("bg") == true ? true : false;
+  let name = $(e.target).attr("name");
+  loadSelectedImage(changed, target, bg);
+});
 
 $(document.body).on("click", ".editable-about-description-action", (e) => {
   let id = $(e.target).data("id");
@@ -202,4 +209,14 @@ $(document.body).on("keyup", ".change-menu", (e) => {
   let target = $(e.target).data("target");
   let value = $(e.target).val();
   $(target).val(value);
+});
+
+$(document.body).on("click", "#addProduct", () => {
+  $("#new-product-modal").modal("toggle");
+});
+
+$(document.body).on("submit", "#new_product_form", (e) => {
+  e.preventDefault();
+  const data = new FormData(e.target);
+  $("#new-product-modal").modal("toggle");
 });

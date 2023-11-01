@@ -324,8 +324,6 @@ https://templatemo.com/tm-586-scholar
           <div class="events_item">
             <div class="thumb">
               <a href="#"><img src="assets/images/course-01.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price"><h6><em>$</em>160</h6></span>
             </div>
             <div class="down-content">
               <span class="author">Stella Blair</span>
@@ -337,8 +335,6 @@ https://templatemo.com/tm-586-scholar
           <div class="events_item">
             <div class="thumb">
               <a href="#"><img src="assets/images/course-02.jpg" alt=""></a>
-              <span class="category">Development</span>
-              <span class="price"><h6><em>$</em>340</h6></span>
             </div>
             <div class="down-content">
               <span class="author">Cindy Walker</span>
@@ -350,8 +346,6 @@ https://templatemo.com/tm-586-scholar
           <div class="events_item">
             <div class="thumb">
               <a href="#"><img src="assets/images/course-03.jpg" alt=""></a>
-              <span class="category">Wordpress</span>
-              <span class="price"><h6><em>$</em>640</h6></span>
             </div>
             <div class="down-content">
               <span class="author">David Hutson</span>
@@ -363,8 +357,6 @@ https://templatemo.com/tm-586-scholar
           <div class="events_item">
             <div class="thumb">
               <a href="#"><img src="assets/images/course-04.jpg" alt=""></a>
-              <span class="category">Development</span>
-              <span class="price"><h6><em>$</em>450</h6></span>
             </div>
             <div class="down-content">
               <span class="author">Stella Blair</span>
@@ -376,8 +368,6 @@ https://templatemo.com/tm-586-scholar
           <div class="events_item">
             <div class="thumb">
               <a href="#"><img src="assets/images/course-05.jpg" alt=""></a>
-              <span class="category">Wordpress</span>
-              <span class="price"><h6><em>$</em>320</h6></span>
             </div>
             <div class="down-content">
               <span class="author">Sophia Rose</span>
@@ -389,14 +379,17 @@ https://templatemo.com/tm-586-scholar
           <div class="events_item">
             <div class="thumb">
               <a href="#"><img src="assets/images/course-06.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price"><h6><em>$</em>240</h6></span>
             </div>
             <div class="down-content">
               <span class="author">David Hutson</span>
               <h4>Full Stack Developer</h4>
             </div>
           </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-start mb-30 event_outer col-md-6 wordpress design">
+          <span class="category">
+            <button id="addProduct" class="btn-category fa-inverse"><i class="fa fa-plus"></i> Add</button>
+          </span>
         </div>
       </div>
     </div>
@@ -693,7 +686,6 @@ https://templatemo.com/tm-586-scholar
   </footer>
 
   <!-- Modals start -->
-  <!-- Modal -->
 <div class="modal fade" id="hero-top-btn-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -1077,8 +1069,7 @@ https://templatemo.com/tm-586-scholar
                 <label for="edit_team_image">
                   <img src="" alt="" id="edit_team_member_image" class="image-pointer">
                 </label>
-                <input type="file" class="file-input-hidden" name="image" id="edit_team_image" accept="image/*"
-                  class="form-control my-2" data-target="#edit_team_member_image" data-bg="false">
+                <input type="file" class="file-input-hidden" name="image" id="edit_team_image" accept="image/*" data-target="#edit_team_member_image" data-bg="false">
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
               <label for="edit_team_work_field">Work Field</label>
@@ -1357,6 +1348,44 @@ https://templatemo.com/tm-586-scholar
         <div class="modal-footer">
           <button type="button" class="btn-category-danger close" data-dismiss="#team-header-modal">Close</button>
           <button type="submit" class="btn-category ">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="new-product-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New Product</h5>
+      </div>
+      <form id="new_product_form" enctype="multipart/form-data">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+              <label for="new_prodct_image">
+                <img src="" alt="" id="new_product_image_preview" class="image-pointer rounded">
+              </label>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 my-2">
+              <label for="">Image</label>
+              <input type="file" name="image" id="new_prodct_image" accept="image/*"
+              class="form-control file-input" data-target="#new_product_image_preview" data-bg="false">
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 my-2">
+              <label for="">Name</label>
+              <input type="text" name="name" id="new_prodct_name" class="form-control" placeholder="Name">
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 my-2">
+              <label for="">Description</label>
+              <textarea name="description" id="new_prodct_description" class="form-control" placeholder="Description..."></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-category-danger close" data-dismiss="#new-product-modal">Close</button>
+          <button type="submit" class="btn-category ">Save</button>
         </div>
       </form>
     </div>
